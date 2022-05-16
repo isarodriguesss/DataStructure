@@ -1,20 +1,18 @@
-from operator import length_hint
-import re
-
-
-array = [i for i in range(10)]
+array = [-1, -1, 6, 1, 9, 3, 2, -1, 4, -1]
 
 def rearrange(array):
+    array = sorted(array)
     for i in range(len(array)):
-        for j in array:
-            if i != j:
-                result = 1
+        for j in range(len(array)):
+            if i == array[j]:
+                controle = 1
+                array[i] = array[j]
                 break
             else:
-                result = 0
-    if result == 1:
-        print("different")
-    else:
-        print("not different")
+                controle = 0
+        if controle != 1:
+            array[i] = -1
+    print(array)
 
 rearrange(array)
+

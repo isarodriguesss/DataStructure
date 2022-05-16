@@ -1,7 +1,11 @@
-array = [i for i in range(1, 11)]
+def reverseArray(array, start, end):
+    while start < end:
+        array[start], array[end] = array[end], array[start]
+        start += 1
+        end = end -1
+    
+A = [1, 2, 3, 4, 5, 6]
 
-def rotate(array, element):
-    new_list = array[element:]+array[:element]
-    return new_list
+reverseArray(A, 0, len(A)-1)
 
-print(rotate(array, 3))
+print(A)
