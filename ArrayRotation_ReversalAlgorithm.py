@@ -16,3 +16,5 @@ def rotate(array, d):
 
 rotate(array, 2)
 print(array)
+
+#Complexity = O(N)

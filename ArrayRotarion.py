@@ -5,3 +5,5 @@ def rotate(array, element):
     return new_list
 
 print(rotate(array, 3))
+
+#Complexity = N

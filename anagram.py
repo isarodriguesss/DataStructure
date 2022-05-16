@@ -16,3 +16,5 @@ def anagram_check(array):
         
 
 print(anagram_check(list))
+
+#Complexity = 2*O(N)
